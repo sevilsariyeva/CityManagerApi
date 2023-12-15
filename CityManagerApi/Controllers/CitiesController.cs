@@ -10,6 +10,7 @@ namespace CityManagerApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CitiesController : ControllerBase
     {
         private IAppRepository _appRepository;
